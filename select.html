@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> </title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<body ng-app="">
+<form>
+<select ng-model="a">
+<option value="">
+<option value="dog">dog
+<option value="cat">cat
+<option value="horse">horse
+</select>
+</form>
+
+<div ng-switch="a">
+<div ng-switch-when="dog">
+<h1>Dog</h1>
+</div>
+
+<div ng-switch-when="cat">
+<h1>cat</h1>
+</div>
+
+<div ng-switch-when="horse">
+<h1>horse</h1>
+</div>
+</div>
+</body>
+</html>

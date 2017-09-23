@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> </title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<body>
+<div ng-app="myapp" ng-controller="myctrl">
+<p>{{firstname}}</p>
+</div>
+
+<script>
+var app=angular.module('myapp',[])
+app.controller('myctrl',function($scope,$timeout)
+{
+$scope.firstname="hello";
+$timeout(function()
+{ $scope.firstname="sarthik";},2000);
+});
+</script>
+</body>
+</html>

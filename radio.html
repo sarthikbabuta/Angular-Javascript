@@ -1,0 +1,23 @@
+<html>
+<head>
+<title> </title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<body ng-app="">
+<form>
+dogs<input type="radio" ng-model="a" value="dogs">
+cat<input type="radio" ng-model="a" value="cat">
+</form>
+
+<div ng-switch="a">
+<div ng-switch-when="dogs">
+<h1>Dogs</h1>
+</div>
+
+<div ng-switch-when="cat">
+<h1>cat</h1>
+</div>
+</div>
+</body>
+</html>

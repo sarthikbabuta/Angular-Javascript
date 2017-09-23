@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> </title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<body>
+<div ng-app="myapp" ng-controller="myctrl">
+<p>{{firstname | uppercase}}</p>
+<p>{{firstname | lowercase}}</p>
+</div>
+
+<script>
+var app=angular.module('myapp',[])
+app.controller('myctrl',function($scope)
+{
+$scope.firstname="saRTthik";
+});
+</script>
+</body>
+</html>

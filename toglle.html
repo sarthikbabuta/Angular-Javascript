@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> </title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<body>
+<div ng-app="myapp" ng-controller="myctrl">
+<button ng-click="func()">click here</button>
+<div ng-show="showme">
+<p>a</p>
+<p>b</p>
+<p>c</p>
+</div>
+
+<script>
+var app=angular.module('myapp',[])
+app.controller('myctrl',function($scope)
+{
+$scope.showme=false;  //pehle show na kre
+$scope.func=function()
+{ $scope.showme=!$scope.showme; }
+});
+</script>
+</body>
+</html>
